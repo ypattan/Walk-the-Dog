@@ -5,31 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#69f0ae"
+    android:background="#C69FA5"
     >
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/doggo_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/doggo" />
-
-        <Button
-            android:id="@+id/Lets_Go_button"
+        
+        <TextView
+            android:id="@+id/walk_time_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="Let's Go!"
+            android:text="Time to go on a walk!"
+            android:textSize="30dp"
             android:textColor="#ffff"
-            android:background="#00867d"
-            android:layout_marginRight="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginBottom="30dp"/>
+            android:background="#8B6D9C"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -38,8 +34,30 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_margin="16dp"
-            android:backgroundTint="#00867d"
-          />
+            android:backgroundTint="#494D7E"
+            android:layout_below="@id/walk_time_text"/>
+
+        <ImageView
+            android:id="@+id/doggo_image_view"
+            android:src="@drawable/doggo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/Lets_Go_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            android:text="Let's Go!"
+            android:textColor="#ffff"
+            android:background="#D68E49"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="30dp"/>
+
+
 
     </RelativeLayout>
 
