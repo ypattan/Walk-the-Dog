@@ -5,27 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#C69FA5"
     >
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        
+        android:orientation="vertical"
+        android:background="#ffb11c">
+
         <TextView
             android:id="@+id/walk_time_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Time to go on a walk!"
-            android:textSize="30dp"
+            android:text="You're on a walk!"
+            android:textSize="25sp"
             android:textColor="#ffff"
-            android:background="#8B6D9C"
+            android:background="#006281"
             android:textAlignment="center"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            />
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_margin="16dp"
-            android:backgroundTint="#494D7E"
+            app:fabSize="auto"
+            android:backgroundTint="#002733"
             android:layout_below="@id/walk_time_text"/>
 
         <ImageView
@@ -42,20 +43,23 @@
             android:src="@drawable/doggo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@id/walk_time_text"/>
 
         <Button
-            android:id="@+id/Lets_Go_button"
-            android:layout_width="match_parent"
+            android:id="@+id/lets_go_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:padding="20dp"
             android:text="Let's Go!"
             android:textColor="#ffff"
-            android:background="#D68E49"
-            android:layout_marginRight="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginBottom="30dp"/>
+            android:background="#000000"
+            android:onClick="walking"/>
 
 
 
